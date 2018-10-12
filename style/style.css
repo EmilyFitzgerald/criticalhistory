@@ -7,6 +7,20 @@ h1, h2, h3, h4 {
   color: #165582;
 }
 
-p {
+p, li {
   font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  width: 420px; 
+  height: 315px;
 }
