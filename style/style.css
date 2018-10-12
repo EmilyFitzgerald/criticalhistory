@@ -1,26 +1,96 @@
 body {
-
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Roboto Slab', serif;
   color: #165582;
+  padding: 10px;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 p, li {
   font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  max-width: 600px;
 }
 
 nav {
   font-family: 'Roboto', sans-serif;
-  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  margin: auto;
+  padding: auto;
+}
+
+nav a {
+  /* display: block; */
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 5px;
+  color: #000;
+  /* padding: 8px 16px; */
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #165582;
+}
+
+/* Change the link color on hover */
+nav a:hover {
+  background-color: #555;
+  color: white;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+  flex-flow: row wrap;  
+}
+
+.video {
+  width: 50%;
+}
+
 iframe {
   width: 420px; 
   height: 315px;
+}
+
+.questions {
+  width: 100%;
+  margin: auto;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+
+  .video {
+    width: 100%;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
